@@ -1,10 +1,10 @@
-import Header from "../components/layout/Header";
+import LandingScreen from "../components/layout/LandingScreen";
 
 const HomePage = () => {
   return (
-    <div>
-      <Header></Header>
-    </div>
+    <>
+      <LandingScreen></LandingScreen>
+    </>
   );
 };
 
