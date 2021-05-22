@@ -1,0 +1,54 @@
+@import "abstracts/variables";
+@import "base/animations";
+@import "base/typography";
+@import "base/utlities";
+
+.section_about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
+.row {
+  display: flex;
+  max-width: $grid-width;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.col_1_of_2 {
+  width: calc((100%-#{$gutter-horizontal}) / 2);
+}
+
+.composition {
+  position: relative;
+  &_photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 2rem rgba($color-black, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    transition: all 0.2s;
+    outline-offset: 2rem;
+    &__p1 {
+      left: 0;
+      top: -2rem;
+    }
+    &__p2 {
+      right: 0rem;
+      top: 2rem;
+    }
+    &__p3 {
+      left: 20%;
+      top: 10rem;
+    }
+    &:hover {
+      outline: 1.5rem solid $color-primary;
+      transform: scale(1.05) translateY(-5rem);
+      box-shadow: 0 3rem 4rem, rgba($color-black, 0.5);
+      z-index: 3;
+    }
+  }
+  &:hover &_photo:not(hover) {
+    transform: scale(0.95);
+  }
+}

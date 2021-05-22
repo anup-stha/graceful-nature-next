@@ -1,15 +1,16 @@
 import styles from "./button.module.scss";
 
-const Button = (props) => {
+const Button = ({ children, buttonClass = "" }) => {
+  const css = buttonClass
+    .trim()
+    .split(" ")
+    .map((c) => styles[c])
+    .join(" ");
+
   return (
     <>
-      <a
-        href="#"
-        className={[styles.btn, styles.btn__white, styles.btn__animated].join(
-          " "
-        )}
-      >
-        {props.children}
+      <a href="#" className={css}>
+        {children}
       </a>
     </>
   );
