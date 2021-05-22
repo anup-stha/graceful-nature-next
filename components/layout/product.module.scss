@@ -1,0 +1,21 @@
+@import "abstracts/variables";
+@import "base/animations";
+@import "base/typography";
+@import "base/utlities";
+
+.sectionProduct {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
+}
+
+.row {
+  display: flex;
+  max-width: $grid-width;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.col_1_of_3 {
+  width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+}

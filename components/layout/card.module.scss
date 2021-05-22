@@ -1,0 +1,57 @@
+@import "abstracts/variables";
+@import "base/animations";
+@import "base/typography";
+@import "base/utlities";
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &_side {
+    height: 50rem;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+
+    &__front {
+      background-color: white;
+    }
+    &__back {
+      transform: rotateY(180deg);
+      &__1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
+      }
+      &__2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+      &__3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-blue-light,
+          $color-blue-dark
+        );
+      }
+    }
+  }
+
+  &:hover &_side__front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &_side__back {
+    transform: rotateY(0deg);
+  }
+}
