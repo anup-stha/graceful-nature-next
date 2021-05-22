@@ -4,7 +4,7 @@ const FeatureBox = (props) => {
   return (
     <div className={styles.col_1_of_4}>
       <div className={styles.featureBox}>
-        <i class={[`icon-${props.icon}`, styles.featureBox_icon].join(" ")}></i>
+        <i className={[`icon-${props.icon}`, styles.featureBox_icon].join(" ")}></i>
         <h3
           className={[
             styles.headingTertiary,
