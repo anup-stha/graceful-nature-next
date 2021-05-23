@@ -18,7 +18,7 @@ const Header = () => {
             Organic Products from Nepal
           </span>
         </h1>
-        <Button buttonClass={"btn btn__white btn__animated"}>
+        <Button buttonClass={"btn btn__white btn__animated"} type="link">
           Discover Our Products
         </Button>
       </div>

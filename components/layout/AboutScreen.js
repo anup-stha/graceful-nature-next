@@ -42,7 +42,9 @@ const AboutScreen = () => {
               expedita perferendis id rem rerum quod, quo iusto autem?
               Architecto maxime
             </p>
-            <Button buttonClass="btn-text">Learn More &rarr; </Button>
+            <Button buttonClass="btn-text" type="link">
+              Learn More &rarr;{" "}
+            </Button>
           </div>
           <div className={styles.col_1_of_2}>
             <div className={styles.composition}>

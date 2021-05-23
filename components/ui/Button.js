@@ -1,6 +1,6 @@
 import styles from "./button.module.scss";
 
-const Button = ({ children, buttonClass = "" }) => {
+const Button = ({ children, buttonClass = "", type }) => {
   const css = buttonClass
     .trim()
     .split(" ")
@@ -9,9 +9,13 @@ const Button = ({ children, buttonClass = "" }) => {
 
   return (
     <>
-      <a href="#" className={css}>
-        {children}
-      </a>
+      {type === "link" ? (
+        <a href="#" className={css}>
+          {children}
+        </a>
+      ) : (
+        <button className={css}>{children}</button>
+      )}
     </>
   );
 };

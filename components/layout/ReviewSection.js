@@ -77,7 +77,9 @@ const ReviewSection = () => {
       <div
         className={[styles.u_center_text, styles.u_margin_top_big].join(" ")}
       >
-        <Button buttonClass="btn btn__green">Read More &rarr;</Button>
+        <Button buttonClass="btn btn__green" type="link">
+          Read More &rarr;
+        </Button>
       </div>
     </section>
   );
