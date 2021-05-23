@@ -1,3 +1,4 @@
+import Button from "../ui/Button";
 import Card from "./Card";
 import styles from "./product.module.scss";
 
@@ -11,14 +12,19 @@ const ProductSection = () => {
       </div>
       <div className={styles.row}>
         <div className={styles.col_1_of_3}>
-          <Card color="orange" />
+          <Card color="orange" heading="THE SEA EXPLORER" price="799"></Card>
         </div>
         <div className={styles.col_1_of_3}>
-          <Card color="green" />
+          <Card color="green" heading="THE ORGANIC SOAP" price="1799" />
         </div>
         <div className={styles.col_1_of_3}>
-          <Card color="blue" />
+          <Card color="blue" heading="ORGANIC NAIL POLISH" price="899" />
         </div>
+      </div>
+      <div
+        className={[styles.u_center_text, styles.u_margin_top_huge].join(" ")}
+      >
+        <Button buttonClass="btn btn__green">Discover more products</Button>
       </div>
     </section>
   );
