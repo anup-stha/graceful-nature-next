@@ -25,7 +25,6 @@ const ProductSection = () => {
         className={[styles.u_center_text, styles.u_margin_top_huge].join(" ")}
       >
         <Button buttonClass="btn btn__green" type="link">
-          {" "}
           Discover more products
         </Button>
       </div>
