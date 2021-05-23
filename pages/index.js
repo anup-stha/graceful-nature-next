@@ -5,10 +5,12 @@ import ProductSection from "../components/layout/ProductSection";
 import ReviewSection from "../components/layout/ReviewSection";
 import ContactSection from "../components/layout/ContactSection";
 import FooterSection from "../components/layout/FooterSection";
+import Navigation from "../components/navigation/Navigation";
 
 const HomePage = () => {
   return (
     <>
+      <Navigation />
       <LandingScreen />
       <AboutScreen />
       <FeatureScreen />

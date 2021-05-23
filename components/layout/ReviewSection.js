@@ -3,7 +3,7 @@ import styles from "./review-section.module.scss";
 
 const ReviewSection = () => {
   return (
-    <section className={styles.section_review}>
+    <section className={styles.section_review} id="review">
       <div className={styles.bg_video}>
         <video className={styles.bg_video__content} autoPlay muted loop>
           <source src="images/video.webm" type="video/webm"></source>

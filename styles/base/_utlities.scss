@@ -19,3 +19,10 @@
 .u_margin_top_huge {
   margin-top: 10rem;
 }
+
+.anchor {
+  display: block;
+  height: 50vh; /* 50% viewport height */
+  margin-top: -50vh;
+  visibility: hidden;
+}

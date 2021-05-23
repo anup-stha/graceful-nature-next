@@ -3,7 +3,7 @@ import Form from "../ui/Form";
 
 const ContactSection = () => {
   return (
-    <section className={styles.section_contact}>
+    <section className={styles.section_contact} id="contact">
       <div className={styles.row}>
         <div className={styles.contact}>
           <div className={styles.contact_form}>
