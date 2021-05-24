@@ -3,15 +3,16 @@
 .headingPrimary {
   color: $color-white;
   text-transform: uppercase;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
   &__main {
-    display: block;
     font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
+    font-weight: 200;
+    letter-spacing: 1rem;
 
     animation: moveInLeft ease-out 1s;
     @include respond(phone) {
@@ -21,10 +22,9 @@
   }
 
   &__sub {
-    display: block;
     font-size: 1.8rem;
-    font-weight: 400;
-    letter-spacing: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 0.7rem;
 
     animation: moveInRight ease-out 1s;
 

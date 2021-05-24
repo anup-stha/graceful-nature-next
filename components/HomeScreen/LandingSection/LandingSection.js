@@ -15,9 +15,9 @@ const Header = () => {
         </div>
         <div className={styles.header_textBox}>
           <h1 className={styles.headingPrimary}>
-            <span className={styles.headingPrimary__main}>COSMETICS</span>
+            <span className={styles.headingPrimary__main}>GRACEFUL NATURE</span>
             <span className={styles.headingPrimary__sub}>
-              Organic Products from Nepal
+              NATURAl & Organic Products from Nepal
             </span>
           </h1>
           <Button buttonClass={"btn btn__white btn__animated"} type="link">
