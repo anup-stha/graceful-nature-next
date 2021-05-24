@@ -23,8 +23,6 @@
     @include respond(tab-port) {
       top: 3rem;
       right: 3rem;
-      height: 6rem;
-      width: 6rem;
     }
   }
 
@@ -100,6 +98,7 @@
 
   &__nav {
     height: 100vh;
+    visibility: hidden;
 
     position: fixed;
     top: 0;
@@ -132,7 +131,6 @@
       color: $color-white;
       text-decoration: none;
       text-transform: uppercase;
-
       background-image: linear-gradient(
         120deg,
         transparent 0%,
