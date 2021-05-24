@@ -43,7 +43,6 @@
     @include respond(tab-port) {
       top: 3.5rem;
       right: 3.5rem;
-      height: 5rem;
       width: 5rem;
     }
   }
@@ -99,7 +98,6 @@
   &__nav {
     height: 100vh;
     visibility: hidden;
-
     position: fixed;
     top: 0;
     left: 0;
@@ -159,5 +157,6 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+    visibility: visible;
   }
 }
