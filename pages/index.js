@@ -1,10 +1,10 @@
-import LandingScreen from "../components/layout/LandingScreen";
-import AboutScreen from "../components/layout/AboutScreen";
-import FeatureScreen from "../components/layout/FeatureScreen";
-import ProductSection from "../components/layout/ProductSection";
-import ReviewSection from "../components/layout/ReviewSection";
-import ContactSection from "../components/layout/ContactSection";
-import FooterSection from "../components/layout/FooterSection";
+import LandingScreen from "../components/HomeScreen/LandingSection/LandingSection";
+import AboutScreen from "../components/HomeScreen/AboutSection/AboutSection";
+import FeatureScreen from "../components/HomeScreen/FeatureSection/FeatureSection";
+import ProductSection from "../components/HomeScreen/ProductSection/ProductSection";
+import ReviewSection from "../components/HomeScreen/ReviewSection/ReviewSection";
+import ContactSection from "../components/HomeScreen/ContactSection/ContactSection";
+import FooterSection from "../components/HomeScreen/FooterSection/FooterSection";
 import Navigation from "../components/navigation/Navigation";
 
 const HomePage = () => {
