@@ -4,9 +4,15 @@
 
 .u_margin_bottom_big {
   margin-bottom: 8rem;
+  @include respond(tab-port) {
+    margin-bottom: 4rem;
+  }
 }
 .u_margin_bottom_medium {
   margin-bottom: 4rem;
+  @include respond(tab-port) {
+    margin-bottom: 2rem;
+  }
 }
 .u_margin_bottom_small {
   margin-bottom: 1.5rem;

@@ -40,7 +40,7 @@ const Form = () => {
           Your Message
         </label>
       </div>
-      <Button buttonClass="btn btn__green" type="button">
+      <Button buttonClass="btn btn__green btn-30" type="button">
         SEND YOUR MESSAGE{" "}
       </Button>
     </form>

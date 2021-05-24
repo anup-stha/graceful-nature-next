@@ -13,9 +13,9 @@ const ProductSection = () => {
         >
           <h2 className={styles.headingSecondary}>Most Popular Products</h2>
         </div>
-        <div className={styles.row}>
-          <span className={styles.anchor} id="products"></span>
+        <span className={styles.anchor} id="products"></span>
 
+        <div className={styles.row}>
           <div className={styles.col_1_of_3}>
             <Card color="orange" heading="THE SEA EXPLORER" price="799"></Card>
           </div>

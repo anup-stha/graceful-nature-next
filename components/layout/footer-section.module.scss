@@ -3,16 +3,23 @@
 @import "base/typography";
 @import "base/utlities";
 @import "../ui/button.module.scss";
+@import "layout/grid";
 
 .footer {
   background-color: $color-grey-dark-3;
   padding: 10rem 0;
   font-size: 1.4rem;
   color: $color-grey-light-1;
+  @include respond(tab-port) {
+    padding: 8rem 2rem;
+  }
 
   &_logoBox {
     text-align: center;
     margin-bottom: 8rem;
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
   }
   &_logo {
     width: 15rem;
@@ -22,6 +29,10 @@
     border-top: 1px solid $color-grey-light-2;
     padding-top: 2rem;
     display: inline-block;
+    @include respond(tab-port) {
+      text-align: center;
+      width: 100%;
+    }
   }
 
   &_list {
@@ -58,16 +69,9 @@
     padding-top: 2rem;
     width: 80%;
     float: right;
+    @include respond(tab-port) {
+      text-align: justify;
+      width: 100%;
+    }
   }
-}
-
-.row {
-  display: flex;
-  max-width: $grid-width;
-  gap: 4rem;
-  margin: 0 auto;
-}
-
-.col_1_of_2 {
-  width: calc((100%-#{$gutter-horizontal}) / 2);
 }

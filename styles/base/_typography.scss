@@ -1,9 +1,12 @@
+@import "abstracts/mixins";
+
 .headingPrimary {
   color: $color-white;
   text-transform: uppercase;
 
   backface-visibility: hidden;
   margin-bottom: 6rem;
+
   &__main {
     display: block;
     font-size: 6rem;
@@ -11,6 +14,10 @@
     letter-spacing: 3.5rem;
 
     animation: moveInLeft ease-out 1s;
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 4rem;
+    }
   }
 
   &__sub {
@@ -20,6 +27,11 @@
     letter-spacing: 1.3rem;
 
     animation: moveInRight ease-out 1s;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+      font-size: 1rem;
+    }
   }
 }
 
@@ -37,6 +49,12 @@
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);

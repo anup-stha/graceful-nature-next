@@ -15,6 +15,10 @@
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+  @include respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
   &_logoBox {
     position: absolute;
     top: 4rem;
@@ -31,30 +35,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-}
-
-.headingPrimary {
-  color: $color-white;
-  text-transform: uppercase;
-
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
-  &__main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-
-    animation: moveInLeft ease-out 1s;
-  }
-
-  &__sub {
-    display: block;
-    font-size: 1.8rem;
-    font-weight: 400;
-    letter-spacing: 1.3rem;
-
-    animation: moveInRight ease-out 1s;
   }
 }
